@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Row } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Row, Container } from 'reactstrap';
 
 class CampsiteInfo extends Component {
 
@@ -36,10 +36,14 @@ class CampsiteInfo extends Component {
     render() {
         const campsite = this.props.campsite;
         if (this.props.campsite) {
-            return <Row>
-                {this.renderCampsite(campsite)}
-                {this.renderComments(campsite.comments)}
-            </Row>
+            return (
+                <Container>
+                    <Row>
+                        {this.renderCampsite(campsite)}
+                        {this.renderComments(campsite.comments)}
+                    </Row>
+                </Container>
+            );
         }
         return <div />
     }
