@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle, Container, Row } from 'reactstrap';
 
 function RenderDirectoryItem({campsite, onClick}) {
     return (
@@ -23,11 +23,11 @@ function Directory(props) {
     });
 
     return (
-        <div className="container">
-            <div className="row">
+        <Container>
+            <Row>
                 {directory}
-            </div>
-        </div>
+            </Row>
+        </Container>
     );
 }
 

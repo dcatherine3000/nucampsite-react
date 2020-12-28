@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Row, Container } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Container, Row } from 'reactstrap';
 
 function RenderCampsite({campsite}) {
     return (
@@ -33,7 +33,7 @@ function RenderComments({comments}) {
 
 function CampsiteInfo(props) {
     const campsite = props.campsite;
-    if (props.campsite) {
+    if (campsite) {
         return (
             <Container>
                 <Row>
