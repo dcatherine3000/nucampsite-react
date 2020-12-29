@@ -4,7 +4,7 @@ import { Card, CardImg, CardImgOverlay, CardTitle, Container, Row } from 'reacts
 function RenderDirectoryItem({campsite}) {
     return (
         <Card>
-            <CardImg width="100" src={campsite.image} alt={campsite.name} />
+            <CardImg width="100%" src={campsite.image} alt={campsite.name} />
             <CardImgOverlay>
                 <CardTitle>{campsite.name}</CardTitle>
             </CardImgOverlay>
