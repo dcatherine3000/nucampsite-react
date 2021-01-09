@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
 
-    constructor (props) {
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -53,7 +53,7 @@ class Header extends Component {
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
-                            <NavItem>
+                                <NavItem>
                                     <NavLink className="nav-link" to="/home">
                                         <i className="fa fa-home fa-lg" /> Home
                                     </NavLink>
